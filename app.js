@@ -18,7 +18,7 @@ connectToDatabase();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use('/api/v1/books', bookRoutes);
+app.use('/api/books', bookRoutes);
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Backend!');
